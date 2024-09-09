@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="New Twitter, Are you ready??" />
+    <meta
+      name="keywords"
+      content="Twitter, Ellon Musk, Alexandre de Moraes, Rede social, "
+    />
+    <title>Novo Twitter</title>
+    <link rel="icon" type="image/x-icon" href="/img/logo.ico" />
+
+    <!-- Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Baloo+Paaji+2:wght@400..800&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="twitter-countdown">
+      <img
+        loading="lazy"
+        src="img/logo.png"
+        class="header-image"
+        alt="Twitter logo"
+      />
+      <div class="content-wrapper">
+        <header class="header-container">
+          <div class="header-content">
+            <div class="blue-box"></div>
+            <h2 class="new-text">Novo</h2>
+            <h1 class="twitter-logo">twitter</h1>
+          </div>
+        </header>
+        <p class="main-description">
+          Reunimos uma equipe talentosa e mentes criativas para transformar o
+          modo como você se conecta com o mundo. Junte-se a nós!!
+        </p>
+        <p class="challenge-description">
+          O nosso desafio é desenvolver o app antes do cronômetro acabar, será
+          que a gente consegue?
+        </p>
+      </div>
+      <section class="countdown-section">
+        <h2 class="countdown-title">Tempo para o lançamento!!</h2>
+        <div class="countdown-timer">
+          <div class="timer-container">
+            <div class="timer-unit">
+              <span class="timer-value" id="day-counter">00</span>
+              <span class="timer-label">Dias</span>
+            </div>
+            <div class="timer-unit">
+              <span class="timer-value" id="hour-counter">00</span>
+              <span class="timer-label">Horas</span>
+            </div>
+            <div class="timer-unit">
+              <span class="timer-value" id="minute-counter">00</span>
+              <span class="timer-label">Minutos</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <p class="participation-description">
+        Nós vamos criar esse app com vocês, então já coloca uma dica de nome
+        para o app, quem colocar o melhor nome vai ganhar acesso exclusivo e
+        antecipado!!
+      </p>
+      <section class="form">
+        <div class="form-group">
+          <label for="name-input" class="form-label">Nome</label>
+          <input
+            type="text"
+            autocomplete="off"
+            id="name-input"
+            class="form-input"
+            aria-label="Nome"
+          />
+        </div>
+        <div class="form-group">
+          <label for="number-input" class="form-label">Número</label>
+          <input
+            type="tel"
+            autocomplete="off"
+            id="number-input"
+            class="form-input"
+            aria-label="Número"
+          />
+        </div>
+        <div class="form-group">
+          <label for="suggestion-input" class="form-label"
+            >Sugestão de nome</label
+          >
+          <input
+            type="text"
+            id="suggestion-input"
+            autocomplete="off"
+            class="form-input"
+            aria-label="Sugestão de nome"
+          />
+        </div>
+        <button type="submit" class="submit-button">
+          Se inscrever agora!!
+        </button>
+      </section>
+    </section>
+  </body>
+  <script src="script.js"></script>
+</html>

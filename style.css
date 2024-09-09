@@ -1,0 +1,510 @@
+/*.baloo-paaji-2-<uniquifier> {
+  font-family: "Baloo Paaji 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}*/
+
+html {
+  width: 100vw;
+  max-width: 100vw;
+  font-family: "Baloo 2", sans-serif;
+  font-optical-sizing: auto;
+  overflow-x: hidden;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.twitter-countdown {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+  padding: 70px 0;
+  margin-bottom: 40px;
+}
+
+.content-wrapper {
+  display: flex;
+  width: 100%;
+  max-width: 1097px;
+  flex-direction: column;
+  align-items: flex-end;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.header-container {
+  width: 100%;
+}
+
+.new-text {
+  display: flex;
+  margin: 0px;
+  color: black;
+  font-weight: 800;
+  font-size: 110px;
+}
+
+.blue-box {
+  position: absolute;
+  z-index: -1;
+  width: 630px;
+  height: 140px;
+  top: 140px;
+  left: 120px;
+  background-color: #1da1f2;
+  transform: rotate(5deg);
+}
+
+.header-content {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+
+.twitter-logo {
+  color: #fff;
+  margin-top: 140px;
+  margin-bottom: 150px;
+  margin-left: -50px;
+  font-weight: 800;
+  font-size: 140px;
+}
+
+.header-image {
+  position: absolute;
+  aspect-ratio: 1.35;
+  object-fit: contain;
+  object-position: center;
+  width: 300px;
+  right: 10vw;
+  top: 100px;
+}
+
+.main-description {
+  color: #000;
+  align-self: flex-start;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  width: 565px;
+  font-weight: 800;
+  font-size: 30px;
+}
+
+.challenge-description {
+  color: #000;
+  width: 442px;
+  font-weight: 800;
+  font-size: 30px;
+  margin: 0px;
+}
+
+.countdown-section {
+  position: relative;
+  background-color: #1da1f2;
+  align-self: stretch;
+  display: flex;
+  margin-top: 63px;
+  width: 100%;
+  max-width: 100%;
+  flex-direction: column;
+  padding: 30px 0px 90px 0px;
+}
+
+.countdown-title {
+  color: #fff;
+  align-self: flex-start;
+  font-weight: 600;
+  margin: 0px;
+  margin-left: 30px;
+  font-size: 56px;
+}
+
+.countdown-timer {
+  align-self: center;
+  width: 789px;
+  max-width: 100%;
+  margin: 80px 0 0;
+}
+
+.timer-container {
+  display: flex;
+  gap: 20px;
+}
+
+.timer-unit {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  color: #fff;
+  font-weight: 400;
+  white-space: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.timer-value {
+  text-align: center;
+  font-weight: 400;
+  font: 80px "Poppins", sans-serif;
+}
+
+.timer-label {
+  font-weight: 400;
+  font-size: 60px;
+}
+
+.participation-description {
+  color: #000;
+  text-align: center;
+  margin-top: 73px;
+  margin-bottom: 30px;
+  width: 923px;
+  font-weight: 800;
+  font-size: 30px;
+  padding: 0px 20px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 700px;
+}
+
+.form-group {
+  display: flex;
+  margin-top: 20px;
+  width: 500px;
+  flex-direction: column;
+  color: #1da1f2;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.form-label {
+  align-self: center;
+}
+
+.form-input {
+  border-radius: 10px;
+  height: 50px;
+  width: 100%;
+  border: 2px solid #000;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 500px;
+}
+
+.form-input:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+  border: 2px solid #1da1f2;
+}
+
+.submit-button {
+  border-radius: 20px;
+  background-color: #1da1f2;
+  margin-top: 80px;
+  height: 80px;
+  width: 600px;
+  max-width: 100%;
+  color: #fff;
+  font-weight: 600;
+  font-size: 40px;
+  border: none;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.submit-button:active {
+  box-shadow: none;
+}
+
+@media (max-width: 1200px) {
+  .content-wrapper {
+    padding: 0 20px;
+  }
+
+  .header-image {
+    right: 20px;
+  }
+
+  .blue-box {
+    width: 580px;
+    height: 120px;
+    top: 140px;
+    left: 70px;
+  }
+
+  .new-text {
+    font-size: 90px;
+  }
+
+  .twitter-logo {
+    font-size: 120px;
+  }
+
+  .header-content {
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 991px) {
+  .content-wrapper {
+    max-width: 100%;
+  }
+
+  .header-image {
+    width: 250px;
+  }
+
+  .header-container {
+    max-width: 100%;
+  }
+
+  .new-text {
+    font-size: 76px;
+  }
+
+  .twitter-logo {
+    margin-top: 100px;
+    margin-bottom: 60px;
+    font-size: 100px;
+  }
+
+  .blue-box {
+    width: 480px;
+    height: 100px;
+    top: 100px;
+    left: 50px;
+  }
+
+  .main-description {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+
+  .challenge-description {
+    max-width: 100%;
+    margin-top: 30px;
+  }
+
+  .countdown-section {
+    max-width: 100%;
+    margin-top: 40px;
+    padding: 10px 20px 80px;
+    box-sizing: border-box;
+  }
+
+  .countdown-title {
+    max-width: 100%;
+    font-size: 46px;
+  }
+
+  .countdown-timer {
+    margin: 40px 0 10px;
+  }
+
+  .timer-unit {
+    margin-top: 40px;
+    white-space: initial;
+  }
+
+  .timer-value {
+    font-size: 50px;
+  }
+
+  .timer-label {
+    font-size: 40px;
+  }
+
+  .participation-description {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+
+  .form-group {
+    margin-top: 40px;
+    white-space: initial;
+  }
+
+  .form-input {
+    max-width: 100%;
+  }
+
+  .submit-button {
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 900px) {
+  .header-image {
+    top: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .form {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .form-group {
+    width: 100%;
+  }
+
+  .timer-container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+
+  .timer-value {
+    font-size: 40px;
+  }
+
+  .timer-label {
+    font-size: 40px;
+  }
+
+  .countdown-timer {
+    margin-top: 0px;
+  }
+
+  .submit-button {
+    border-radius: 10px;
+    font-size: 26px;
+    height: 60px;
+  }
+
+  .main-description {
+    font-size: 26px;
+  }
+
+  .challenge-description {
+    font-size: 26px;
+  }
+
+  .participation-description {
+    font-size: 26px;
+  }
+
+  .form-group {
+    font-size: 22px;
+  }
+
+  .countdown-title {
+    font-size: 36px;
+  }
+
+  .header-image {
+    width: 200px;
+  }
+}
+
+@media (max-width: 694px) {
+  .header-image {
+    width: 150px;
+  }
+
+  .new-text {
+    font-size: 70px;
+  }
+
+  .twitter-logo {
+    margin-top: 100px;
+    margin-bottom: 60px;
+    font-size: 90px;
+  }
+
+  .blue-box {
+    width: 420px;
+    top: 92px;
+  }
+}
+
+@media (max-width: 575px) {
+  .countdown-title {
+    margin: 0px;
+  }
+
+  .new-text {
+    font-size: 54px;
+  }
+
+  .twitter-logo {
+    margin-top: 70px;
+    margin-bottom: 50px;
+    font-size: 70px;
+  }
+
+  .blue-box {
+    width: 300px;
+    height: 70px;
+    left: 40px;
+    top: 70px;
+  }
+
+  .header-content {
+    margin: 0px;
+  }
+
+  .form-input {
+    height: 40px;
+  }
+}
+
+@media (max-width: 424px) {
+  .header-image {
+    width: 120px;
+  }
+}
+
+@media (max-width: 374px) {
+  .new-text {
+    font-size: 40px;
+  }
+
+  .twitter-logo {
+    margin-top: 60px;
+    margin-bottom: 50px;
+    font-size: 54px;
+  }
+
+  .blue-box {
+    width: 210px;
+    height: 60px;
+    left: 20px;
+    top: 60px;
+  }
+
+  .main-description {
+    font-size: 20px;
+  }
+
+  .challenge-description {
+    font-size: 20px;
+  }
+
+  .participation-description {
+    font-size: 20px;
+  }
+}
