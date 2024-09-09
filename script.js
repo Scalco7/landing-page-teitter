@@ -1,8 +1,16 @@
-const releaseDay = new Date(2024, 8, 19, 19)
+import { registerUserDataBase } from './modules/dataBase.js'
+
+window.registerUser = registerUser;
+
+const releaseDay = new Date(2024, 8, 21, 20)
 
 const daysLabel = document.getElementById("day-counter")
 const hoursLabel = document.getElementById("hour-counter")
 const minutesLabel = document.getElementById("minute-counter")
+
+const nameInput = document.getElementById('name-input')
+const numberInput = document.getElementById('number-input')
+const appNameInput = document.getElementById('suggestion-input')
 
 setTimerCount()
 
@@ -35,3 +43,40 @@ function setTimerCount() {
 function leftPad(value, totalWidth) {
     return ("0000000000" + value).slice(-totalWidth)
 };
+
+async function registerUser() {
+    const name = nameInput.value
+    const number = numberInput.value
+    const appName = appNameInput.value
+
+    if (!name || name == "" || name == " ") {
+        showToast("Adcione um nome", "error")
+        return;
+    }
+
+    if (!number || number == "" || number == " ") {
+        showToast("Adcione um número para contato", "error")
+        return;
+    }
+
+    await registerUserDataBase(name, number, appName)
+
+    showToast("Ideia adicionada!!", "success")
+    nameInput.value = ""
+    numberInput.value = ""
+    appNameInput.value = ""
+}
+
+//type: (error / success)
+function showToast(message, type = "success") {
+    var x = document.getElementById("snackbar");
+
+    x.classList.add("show")
+    x.classList.add(type)
+    x.innerText = message
+
+    setTimeout(function () {
+        x.classList.remove("show");
+        x.classList.remove(type);
+    }, 2000);
+}
