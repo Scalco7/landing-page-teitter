@@ -13,8 +13,37 @@ const nameInput = document.getElementById('name-input')
 const numberInput = document.getElementById('number-input')
 const appNameInput = document.getElementById('suggestion-input')
 
-setTimerCount()
+const challengeDescription = document.getElementsByClassName("challenge-description")[0]
+const countDownSection = document.getElementsByClassName("countdown-section")[0]
 
+const sectionsList = [
+    { section: challengeDescription, animation: "animate__slideInRight" },
+    { section: countDownSection, animation: "animate__fadeIn" }
+]
+
+setTimerCount()
+animateSections()
+
+document.addEventListener('scroll', () => animateSections())
+
+function animateSections() {
+    const screenHeight = window.innerHeight
+
+    sectionsList.forEach((obj) => {
+        const sectionTop = obj.section.getBoundingClientRect().top
+
+        if (sectionTop + 20 < screenHeight && obj.section.classList.contains('hidden')) {
+            addAnimationToSection(obj.section, obj.animation)
+        }
+    })
+}
+
+
+function addAnimationToSection(section, animation) {
+    section.classList.remove("hidden")
+    section.classList.add("animate__animated")
+    section.classList.add(animation)
+}
 
 function setTimerCount() {
     const today = new Date()

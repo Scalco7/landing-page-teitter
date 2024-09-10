@@ -26,33 +26,41 @@
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="toast.css" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
   </head>
   <body>
     <section class="twitter-countdown">
       <img
         loading="lazy"
         src="img/logo.png"
-        class="header-image"
+        class="header-image animate__animated animate__bounceInDown animate__delay-1s"
         alt="Twitter logo"
       />
       <div class="content-wrapper">
         <header class="header-container">
           <div class="header-content">
-            <div class="blue-box"></div>
-            <h2 class="new-text">Novo</h2>
+            <div
+              class="blue-box animate__animated animate__rotateInUpLeft"
+            ></div>
+            <h2 class="new-text animate__animated animate__slideInLeft">
+              Novo
+            </h2>
             <h1 class="twitter-logo">twitter</h1>
           </div>
         </header>
-        <p class="main-description">
+        <p class="main-description animate__animated animate__slideInLeft">
           Reunimos uma equipe talentosa e mentes criativas para transformar o
           modo como você se conecta com o mundo. Junte-se a nós!!
         </p>
-        <p class="challenge-description">
+        <p class="challenge-description hidden">
           O nosso desafio é desenvolver o app antes do cronômetro acabar, será
           que a gente consegue?
         </p>
       </div>
-      <section class="countdown-section">
+      <section class="countdown-section hidden">
         <h2 class="countdown-title">Tempo para o lançamento!!</h2>
         <div class="countdown-timer">
           <div class="timer-container">
@@ -71,12 +79,12 @@
           </div>
         </div>
       </section>
-      <p class="participation-description">
+      <p class="participation-description hidden">
         Nós vamos criar esse app com vocês, então já coloca uma dica de nome
         para o app, quem colocar o melhor nome vai ganhar acesso exclusivo e
         antecipado!!
       </p>
-      <section class="form">
+      <section class="form hidden">
         <div class="form-group">
           <label for="name-input" class="form-label">Nome</label>
           <input
