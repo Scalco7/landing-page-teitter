@@ -15,10 +15,14 @@ const appNameInput = document.getElementById('suggestion-input')
 
 const challengeDescription = document.getElementsByClassName("challenge-description")[0]
 const countDownSection = document.getElementsByClassName("countdown-section")[0]
+const participationDescription = document.getElementsByClassName("participation-description")[0]
+const form = document.getElementsByClassName("form")[0]
 
 const sectionsList = [
     { section: challengeDescription, animation: "animate__slideInRight" },
-    { section: countDownSection, animation: "animate__fadeIn" }
+    { section: countDownSection, animation: "animate__fadeIn" },
+    { section: participationDescription, animation: "animate__backInUp" },
+    { section: form, animation: "animate__flipInY" },
 ]
 
 setTimerCount()
